@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2? family= Lagosta & family= Poppins:wght@300 & display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    text-align: center;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    height: 100px;
+}
+header {
+    display: inline-block;
+}
+.main {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: orangered;
+}
+.bloco {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.bloco div {
+    display: inline-block;
+}
+.bloco input {
+    width: 250px;
+    padding: 8px;
+}
+.bloco button {
+    width: 250px;
+    border: 0;
+    background-color: orangered;
+    color: white;
+    font-size: 13pt;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    cursor: pointer;
+}

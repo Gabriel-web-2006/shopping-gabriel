@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2? family= Lagosta & family= Poppins:wght@300 & display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 80px;
+    width: 100%;
+    padding: 0 50px 0 100px;
+    background-color: rgb(247, 91, 1);
+    
+}
+nav .logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 5px;
+}
+nav ul li a {
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav ul li a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+nav ul li a.ative {
+    color: black;
+    border-bottom: 1px solid black;
+}
+nav .menu-btn svg{
+    cursor: pointer;
+    display: none;
+    color: white;
+    border: 1px solid white;
+    height: 30px;
+}
+nav .area-usuario a {
+    text-decoration: none;
+    border: 1px solid white;
+    transition: all 03.s ease;
+    color: white;
+}
+nav .area-usuario a:hover {
+    color:black;
+    border: 1px solid black;
+}
+#carouselExampleCaptions {
+    font-family: 'Poppins', sans-serif;
+
+}
+#carouselExampleCaptions  h5 {
+    color: orange;
+    border: 1px solid orange;
+    font-size: 35px;
+}
+.img {
+    display: none;
+}
+.cartaos {
+    text-align: center;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.cartaos div {
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+.cartaos div:hover {
+    box-shadow: 5px 8px 8px rgb(129, 124, 124);
+}
+.cartaos a:hover {
+    background-color: rgb(247, 91, 1);
+}
+.rodape {
+    background-color: rgb(16, 26, 71);
+    width: 100%;    
+    font-family: 'Poppins', sans-serif;
+    color: rgb(126, 121, 121);
+    text-align: center;
+    height: 7cm;
+}
+.rodape p {
+    display: inline-block;
+    margin: 5px;
+
+}
+.rodape svg {
+    margin: 5px;
+    color: rgb(247, 91, 1);
+}
+.rodape svg#facebook:hover  {
+    color: rgb(30, 45, 255);
+}
+.rodape svg#instagram:hover {
+    color: purple;
+}
+.rodape svg#twiter:hover {
+    color: dodgerblue;
+}
+.rodape svg#youtube:hover  {
+    color: red;
+}
+.rodape svg#tiktok:hover  {
+    color: black;
+}
+.rodape svg:hover {
+    cursor: pointer;
+}
+.rodape button {
+    background-color: rgb(16, 26, 71);
+    border: 1px solid rgb(247, 91, 1);
+    padding: 7px 7px;
+    color: rgb(247, 91, 1);
+    transition: all 0.3s ease;
+}
+.rodape button:hover {
+    cursor: pointer;
+    background-color:rgb(247, 91, 1);
+    color: white;
+}
+@media screen and (max-width: 920px) {
+    nav .menu-btn svg{
+        display: block;
+        color: white;
+        font-weight: 800;
+        border: 1px solid white;
+        height: 30px;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(16, 26, 71);
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    .img {
+        width: 100%;
+        display: block;
+    }
+    #carouselExampleCaptions {
+        display: none;
+    }
+    #carouselExampleCaptions  h5 {
+        color: orange;
+        font-size: 35px;
+    }
+    .cartaos {
+        display: none ;
+    }
+    .rodape {
+        height: 9cm;
+    }
+    
+  
+}
+@media screen and (max-width:280px) {
+    nav .menu-btn svg{
+        display: block;
+        color: white;
+        font-weight: 800;
+        border: 1px solid white;
+        height: 30px;
+        width: 30px;
+    }
+    nav .logo h1{
+        font-size: 20px;
+        left: left;
+        text-align: left;
+    }
+    nav ul li a {
+        font-size: 13px;
+        text-align: center;
+    }
+}
